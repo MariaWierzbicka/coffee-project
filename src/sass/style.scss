@@ -1,0 +1,249 @@
+@import 'partials/typography';
+@import 'partials/variables';
+@import 'partials/normalize';
+
+
+.header{
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.7)
+  ), url('../images/background.png');
+  background-position: center center;
+  background-size: cover;
+  display: block;
+  height: auto;
+  font-family: $font-header;
+}
+
+.title, .subtitle, .nav-link {
+  color: $color-light;
+  text-transform: uppercase;
+}
+
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.navbar-brand, .title, .form-title {
+  font-weight: 700;
+  letter-spacing: 7px;
+}
+
+.subtitle {
+  font-size: 10px;
+  letter-spacing: 4px;
+  font-weight: 700;
+
+}
+
+.navbar-nav a {
+  color: $color-gray;
+  font-size: 14px;
+  font-weight: 700;
+  padding-right: 10px;
+}
+
+.navbar-nav a:hover {
+  color: $color-main;
+}
+
+.big-title {
+  text-align: center;
+  padding: 128px 0;
+  overflow: hidden;
+  line-height: 1.1;
+}
+
+.big-title-1, .big-title-2 {
+  text-transform: uppercase;
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: 15px;
+  color: $color-main;
+  transform: translateX(-30%);
+}
+
+.big-title-2 {
+  transform: translateX(12%);
+}
+
+.big-title::after {
+  content: "";
+  display: inline-block;
+  height: 0.5em;
+  vertical-align: bottom;
+  width: 16%;
+  border-top: 3px solid $color-main;
+  margin: 36px auto;
+}
+
+.discover {
+  color: $color-light;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.discover h3 {
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 0;
+}
+
+.discover i {
+  font-size: 28px;
+  color: $color-light;
+}
+
+.section-title h1 {
+  color: $color-main;
+  letter-spacing: 10px;
+  font-weight: 700;
+  font-size: 48px;
+  margin: 0 auto;
+}
+
+.section-title {
+  overflow: hidden;
+  text-align: center;
+  margin: 15px auto;
+}
+
+.section-title::after {
+  content: "";
+  display: inline-block;
+  height: 0.5em;
+  vertical-align: bottom;
+  width: 42%;
+  border-top: 3px solid $color-main;
+}
+
+.img-one {
+  background-image: $photo-one;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-two {
+  background-image: $photo-two;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-three {
+  background-image: $photo-three;
+  background-size: cover;
+  background-position: center;
+}
+
+.photo {
+  box-shadow: 0px 0px 32px -6px rgb(0, 0, 0);
+  max-height: 282px;
+  max-width: 360px;
+}
+
+.text h1 {
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+.decoration::after {
+  content: "";
+  display: inline-block;
+  height: 0.5em;
+  vertical-align: bottom;
+  width: 80%;
+  border-bottom: 2px solid $color-main;
+  position: relative;
+}
+
+// .products {
+//   margin: 0 20px;
+// }
+
+.product {
+  margin: 56px auto;
+  height: 282px;
+}
+
+.text {
+  padding: 32px;
+}
+
+.product-data h2 {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+.product-data span {
+  color: $color-main;
+}
+
+.product-data i {
+  color: $color-main;
+  font-size: 72px;
+  line-height: 1.5;
+}
+
+.about {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.7)
+  ), url('../images/about-us.jpg');
+  background-position: center center;
+  background-size: cover;
+  display: block;
+  height: auto;
+  font-family: $font-header;
+}
+
+.about-text p {
+  font-style: italic;
+  font-size: 22px;
+  color: $color-light;
+  line-height: 1.5;
+}
+
+footer p {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 600;
+  margin: 10px auto;
+}
+
+.form-group {
+  text-align: center;
+}
+
+
+.form-title, .btn {
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 2px;
+  padding: 20px;
+}
+
+.form-control {
+  border-radius: 0;
+  border: 2px solid black;
+  resize: none;  
+}
+
+.btn {
+  width: 100%;
+  margin: 24px auto;
+  border-radius: 0;
+  border: none;
+  font-weight: 700;
+  padding: 16px;
+  background-color: $color-main;
+}
+
+.btn:hover {
+  background-color: $color-darker;
+}
