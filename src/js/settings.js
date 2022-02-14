@@ -17,6 +17,6 @@ export const settings = {
   },
 };
 
-export const templates = {
-  product: Handlebars.compile(document.querySelector(select.templateOf.product).innerHTML)
-};
+// export const templates = {
+//   product: Handlebars.compile(document.querySelector(select.templateOf.product).innerHTML)
+// };

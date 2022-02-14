@@ -1,4 +1,4 @@
-import { settings, templates } from './settings.js';
+import {settings} from './settings.js';
 
 const app = {
   initData: function() {
@@ -12,19 +12,26 @@ const app = {
       .then((parsedResponse) => {
         this.data.products = parsedResponse;
       });
-    console.log(thisApp.data);
-  },
+  
 
-  renderProducts(){
-    const thisProduct = this;
-    const generatedProduct = templates.product(thisProduct.data);
-    console.log(generatedProduct);
+    const productTemplate = document.getElementById('template-product').innerHTML;
+    // const generatedProduct = templates.product(thisProduct.data);
+    // console.log(generatedProduct);
+
+    const template = Handlebars.compile(productTemplate);
+    
+    console.log(thisApp.data);
+    
+
+    const productData = template(thisApp.data);
+
+    document.getElementById('product').innerHTML += productData;
+    
   },
 
   init: function() {
     const thisApp = this;
     thisApp.initData();
-    thisApp.renderProducts();
   },
 };
 

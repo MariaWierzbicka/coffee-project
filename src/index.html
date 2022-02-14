@@ -41,30 +41,9 @@
       <h1>Products</h1>
     </div>
     <div id="products" class="products p-1">
-      <div id="product" class="row gap-4 justify-content-center product">
-        <div class="col-4 text">
-          <div class="row">
-            <h1 class="px-3">01. La Lagartija</h1>
-          </div>
-          <div class="row px-3 justify-content-center">
-            <div class="col-3"><div class="row decoration justify-content-center"></div></div>
-            <div class="col-9">
-              <p>Nunc ultricies felis sollicitudin sem condimentum molestie. Sed facilisis cursus ipsum sed hendrerit. Integer condimentum nulla eu nunc euismod, non.</p>
-            </div>
-          </div>
-          <div class="row mt-3 px-3 product-data justify-content-between">
-            <div class="col-6">
-            <h2>Roasting: <span>5/10</span></h2>
-            <h2>Intensity: <span>6/10</span></h2>
-            </div>
-            <div class="col-3">
-              <i class="fas fa-award"></i>
-            </div>
-          </div>
-        </div>
-        <div class="col-4 photo img-one">
-        </div>
-      </div>
+
+      <div id="product"></div>
+      
       <div class="row gap-4 justify-content-center product">
         <div class="col-4 ms-5 photo img-two">
         </div>
@@ -130,9 +109,30 @@
   </footer>
 
   <script id="template-product" type="text/x-handlebars-template">
-    <article class="product">
-      <h1>{{ title }}</h1>
-    </article>
+    <div id="product" class="row gap-4 justify-content-center product">
+      <div class="col-4 text">
+        <div class="row">
+          <h1 class="px-3">01. La Lagartija</h1>
+        </div>
+        <div class="row px-3 justify-content-center">
+          <div class="col-3"><div class="row decoration justify-content-center"></div></div>
+          <div class="col-9">
+            <p>Nunc ultricies felis sollicitudin sem condimentum molestie. Sed facilisis cursus ipsum sed hendrerit. Integer condimentum nulla eu nunc euismod, non.</p>
+          </div>
+        </div>
+        <div class="row mt-3 px-3 product-data justify-content-between">
+          <div class="col-6">
+          <h2>Roasting: <span>5/10</span></h2>
+          <h2>Intensity: <span>6/10</span></h2>
+          </div>
+          <div class="col-3">
+            <i class="fas fa-award"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 photo img-one">
+      </div>
+    </div>
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
