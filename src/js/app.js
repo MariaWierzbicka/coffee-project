@@ -15,8 +15,7 @@ const app = {
   
 
     const productTemplate = document.getElementById('template-product').innerHTML;
-    // const generatedProduct = templates.product(thisProduct.data);
-    // console.log(generatedProduct);
+  
 
     const template = Handlebars.compile(productTemplate);
     
