@@ -35,12 +35,13 @@
       <div class="p-3"><i class="far fa-arrow-alt-circle-down"></i></div>
     </div>
   </section>
+
   <section class="products pt-3">
     <div class="section-title">
       <h1>Products</h1>
     </div>
-    <div class="products p-1">
-      <div class="row gap-4 justify-content-center product">
+    <div id="products" class="products p-1">
+      <div id="product" class="row gap-4 justify-content-center product">
         <div class="col-4 text">
           <div class="row">
             <h1 class="px-3">01. La Lagartija</h1>
@@ -127,5 +128,14 @@
   <footer>
     <p>© 2021 EL TIGRE inc.</p>
   </footer>
+
+  <script id="template-product" type="text/x-handlebars-template">
+    <article class="product">
+      <h1>{{ title }}</h1>
+    </article>
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script src="js/app.js" type="module"></script>
 </body>
 </html>

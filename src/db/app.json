@@ -1,1 +1,28 @@
-{} 
+{
+ "products":[
+  {
+   "id":"lagartija",
+   "title": "01. La Lagartija",
+   "description": "Nunc ultricies felis sollicitudin sem condimentum molestie. Sed facilisis cursus ipsum sed hendrerit. Integer condimentum nulla eu nunc euismod, non.",
+   "image": "<img class=\"active\" src=\"images/coffee-1.png\">",
+   "roasting": 5,
+   "intensity": 6
+  },
+  {
+   "id":"tigre",
+   "title": "02. El Tigre",
+   "description": "Nunc ultricies felis sollicitudin sem condimentum molestie. Sed facilisis cursus ipsum sed hendrerit. Integer condimentum nulla eu nunc euismod, non.",
+   "image": "<img class=\"active\" src=\"images/coffee-2.png\">",
+   "roasting": 8,
+   "intensity": 9
+  },
+  {
+   "id":"cucaracha",
+   "title": "03. La Cucaracha",
+   "description": "Nunc ultricies felis sollicitudin sem condimentum molestie. Sed facilisis cursus ipsum sed hendrerit. Integer condimentum nulla eu nunc euismod, non.",
+   "image": "<img class=\"active\" src=\"images/coffee-3.png\">",
+   "roasting": 3,
+   "intensity": 7
+  }
+ ]
+} 
